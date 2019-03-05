@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top|center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter Value"
+        android:inputType="numberSigned|numberDecimal"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/plus"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="PLUS"
+            android:text="+" />
+
+        <Button
+            android:id="@+id/minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="MINUS"
+            android:text="-" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/kafol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="KAFOL"
+            android:text="*" />
+
+        <Button
+            android:id="@+id/hilok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="HILOK"
+            android:text="/" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="195dp"
+        android:layout_height="312dp"
+        android:gravity="top"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/Ac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="AC"
+            android:text="A/C" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/shave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="SHAVE"
+            android:text="=" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/Credit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="CREDITS"
+        android:text="Credit" />
+
+</LinearLayout>
